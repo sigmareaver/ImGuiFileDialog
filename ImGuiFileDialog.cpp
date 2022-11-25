@@ -59,7 +59,7 @@ SOFTWARE.
 #ifdef USE_STD_FILESYSTEM
 #include <Windows.h>
 #else
-#include "dirent/dirent.h" // directly open the dirent file attached to this lib
+#include "dirent.h" // directly open the dirent file attached to this lib
 #endif // USE_STD_FILESYSTEM
 #define PATH_SEP '\\'
 #ifndef PATH_MAX
@@ -77,11 +77,11 @@ SOFTWARE.
 #define PATH_SEP '/'
 #endif // _IGFD_UNIX_
 
-#include "imgui.h"
+#include "imgui_docking/imgui.h"
 #ifndef IMGUI_DEFINE_MATH_OPERATORS
 #define IMGUI_DEFINE_MATH_OPERATORS
 #endif // IMGUI_DEFINE_MATH_OPERATORS
-#include "imgui_internal.h"
+#include "imgui_docking/imgui_internal.h"
 
 #include <cstdlib>
 #include <algorithm>
